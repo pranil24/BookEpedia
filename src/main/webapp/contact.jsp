@@ -31,7 +31,7 @@
             
              <div class="col-lg-10 col-md-9 col-sm-9">
                <h3 class="font-weight-light">Find Us at the office</h3>
-               <p>232 BookMyBook Office<br>
+               <p>232 BookEpedia Office<br>
                  B Sector, Nagpur<br>
                  Maharastra
                </p>

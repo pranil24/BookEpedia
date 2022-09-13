@@ -44,7 +44,7 @@
 <nav class="navbar navbar-expand-sm"
 	style="background: linear-gradient(45deg, #993876 32%, #9e21f3 100%); border-bottom: 1px solid red">
 	<a class="navbar-brand" href="user_home.jsp"
-		style="color: white; font-weight: bold">BookMyBook</a>
+		style="color: white; font-weight: bold">BookEpedia</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse"
 		data-target="#navbarSupportedContent"
 		aria-controls="navbarSupportedContent" aria-expanded="false"

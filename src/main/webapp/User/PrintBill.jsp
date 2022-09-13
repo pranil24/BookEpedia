@@ -10,7 +10,7 @@
     }
 </style>
 <div class="text-center mt-5">
-    <h3>BookMyBook.com</h3>
+    <h3>BookEpedia</h3>
     <h4>C-10 Sector-C </h4>
     <h4 class="border-bottom border-dark pb-2">Near soft polynomials, Nagpur Maharastra(India)</h4>
     <h4>Invoice no. <%= session.getAttribute("order_id")%> </h4>
