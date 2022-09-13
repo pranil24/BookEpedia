@@ -98,59 +98,7 @@ to {
 	<%
 		}
 	%>
-	<!-- Vertical navbar start -->
-	<div class="bg-white vertical-nav" id="sidebar">
-
-		<div class="bg-light py-4 px-3 mb-1">
-			<p class="font-weight-bold text-uppercase px-3 sidebar-title text-center"><span style="color:green">Online Book</span> <span style="color:red">Shop</span></p>
-
-			<div class="media d-flex align-items-center">
-				<img src="../images/admin.png" width="90" height="90"
-					class="mr-3 rounded-circle img-thumbnail shadow-sm">
-
-				<div class="media-body">
-					<h4 class="mb-0">Admin</h4>
-					<p class="text-muted mb-0">admin@gmail.com</p>
-				</div>
-			</div>
-		</div>
-
-		<ul class="nav flex-column bg-white">
-
-			<li class="nav-item"><a href="dashboard.jsp"
-				class="nav-link text-dark bg-light"> <i
-					class="fas fa-tachometer-alt fa-fw mr-3 text-primary"></i>
-					Dashboard
-			</a></li>
-
-			
-			<li class="nav-item"><a href="view_Booking.jsp"
-				class="nav-link text-dark bg-light"><i class="fas fa-book-reader fa-fw mr-3 text-primary"></i>
-					View Booking
-			</a></li>
-			
-
-			<li class="nav-item dropdown"><a href=""
-				class="nav-link dropdown-toggle text-dark bg-light" id="navbardrop"
-				data-toggle="dropdown"> <i class="fab fa-product-hunt fa-fw mr-3 text-primary"></i> Product</a>
-
-				<div class="dropdown-menu">
-					<a href="addProduct.jsp" class="dropdown-item">Add Product</a> 
-					<a href="viewProduct.jsp" class="dropdown-item">View Product</a>
-				</div>
-			</li>
-			
-				
-			<li class="nav-item"><a href="../logout"
-				class="nav-link text-dark bg-light"> <i
-					class="fas fa-power-off fa-fw mr-3 text-primary"></i>
-					Logout
-			</a></li>
-
-		</ul>
-	</div>
-
-	<!-- Vertical navbar end -->
+	<%@include file="sidebar.jsp" %> 
 
 	<!-- content placeholder start -->
 
