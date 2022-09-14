@@ -50,9 +50,14 @@ public class ProductDAO {
     }
 
     public static void fileCopy(ServletContext ctx, Part part, String filename) throws Exception {
-        Files.copy(part.getInputStream(),
-                Paths.get(ctx.getRealPath("/images2/"), filename),
-                StandardCopyOption.REPLACE_EXISTING);
+    	try {
+    		 Files.copy(part.getInputStream(),
+    	                Paths.get(ctx.getRealPath("/images2/"), filename),
+    	                StandardCopyOption.REPLACE_EXISTING);
+    	}catch(Exception e) {
+    		e.printStackTrace();
+    	}
+       
     }
     
     //Edit product
