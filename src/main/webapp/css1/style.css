@@ -100,17 +100,18 @@ input:focus{
     background: green;
 }
 .shopping_cart{
-    float:left;
+    float: right;
     width: 202px;
-    position:relative;
-    margin-left:15px;
-    padding: 0 0 0 46px;
+    position: relative;
+    margin-left: 25px;
+    /* padding: 0 0 0 46px; */
     background: url(../images/header_cart.png) 0 0 no-repeat;
-    z-index: 99;
-    -webkit-box-sizing: border-box;
+    /* z-index: 99; */
+    /* -webkit-box-sizing: border-box; */
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    cursor:pointer;
+    cursor:
+    pointer;
 }
 .cart{
     height: 38px;

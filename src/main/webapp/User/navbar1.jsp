@@ -2,7 +2,24 @@
 <%@page import="com.book.dao.DbConnect"%>
 <%@page import="com.book.dao.CartDAO"%>
 <%@page import="java.sql.*"%>
-
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropup,
+.dropright,
+.dropdown,
+.dropleft {
+  position: fixed;
+  margin-right: 50px;
+  padding-right: 50px;
+}
+.navbar-expand-sm .navbar-nav .dropdown-menu {
+    position: absolute;
+    width: fit-content;
+}
+</style>
+</head>
 <% 
     String email = session.getAttribute("email").toString();	
     int uid=0;
