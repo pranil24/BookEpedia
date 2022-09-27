@@ -32,7 +32,7 @@
              <div class="col-lg-10 col-md-9 col-sm-9">
                <h3 class="font-weight-light">Find Us at the office</h3>
                <p>232 BookEpedia Office<br>
-                 B Sector, Nagpur<br>
+                 B Sector, Nashik<br>
                  Maharastra
                </p>
             </div>            
@@ -45,20 +45,24 @@
             
              <div class="col-lg-10 col-md-9 col-sm-9">
                <h3 class="font-weight-light">Give Us a Ring</h3>
-               <p>Santosh Maskar<br>
-                 +91 8602768216<br>
+               <p>Nikhil Korade<br>
+                 +91 7709145725<br>
                  Maharastra
                </p>
-               <p>Shashank Khose<br>
-                 +91 7540124525<br>
+               <p>Harshada Kudal<br>
+                 +91 8793897362<br>
                  Maharastra
                </p>
-               <p>Snehal Chavan<br>
-                 +91 7845123698<br>
+               <p>Tejas Kulkarni<br>
+                 +91 8830418657<br>
                  Maharastra
                </p>
-               <p>Mayuri Kurhe<br>
-                 +91 9632145879<br>
+               <p>Pranil Jadhav<br>
+                 +91 8806658254<br>
+                 Maharastra
+               </p>
+               <p>Ashish Nikam<br>
+                 +91 7249162923<br>
                  Maharastra
                </p>
             </div>            
