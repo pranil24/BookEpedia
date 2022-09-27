@@ -73,7 +73,7 @@
     			 if(fname=="" || fname==null){
     				alert("Firstname cannot be Empty");
     				return false;
-    			}else if(lname==null || username==""){
+    			}if(lname==null || username==""){
     				alert("Lastname cannot be Empty");
     				return false;
     			}else if(password=="" || password==null){
@@ -83,10 +83,6 @@
     			}else if(email=="" || email==null){
     				
     				alert("Email cannot be Empty");
-    				return false;
-    			}else if(isNaN(userid)){
-    				
-    				alert("User ID should contain Only Digits");
     				return false;
     			}else if(!(email.match(mailformat))){
     				alert("Please Enter Valid Mail ID");
@@ -104,35 +100,8 @@
     			});
 
     		
-    		$("#id").change(function(){
-    			var userid=$("#id").val();   //here we are restricting the user at the time of typing,we called an event "Keyup"
-    			 if(isNaN(userid)){
-    					
-    					$("#errid").show();  //if user enters other than number then the error span will be shown
-    					return false;
-    				}else{
-    					$("#errid").hide();
-
-
-    				return true;
-    				}
-    			
-    			
-    		});
-    		$("#username").change(function(){
-    			var username=$("#username").val();
-    			 var letters = /^[A-Za-z]+$/;
-
-    			 if(!(username.match(letters))){
-    				 $("#errname").show();
-
-    				 return false;
-    				}else{
-    					$("#errname").hide();
-    					return true;
-    				}
-    			
-    		});
+    		
+    		
     		$("#email").change(function(){
     			var email=$("#email").val();
 
@@ -170,27 +139,33 @@
 	        var  email=$(this).val();
 	        //alert (email);
 	        if(email){
-	        	//alert (email);
-	        	/* var ajax = new XMLHttpRequest(){
-					ajax.onreadystatechange = function(){
-						if(ajaz.readystate == 4){
-							document.getElementById("message").innerHTML = ajax.resposeText;
-						}
-					};
-					
-					var url ="CheckEmail?email="+email;
-					ajax.open ("GET",url,true);
-					ajax.send(null);
-					
-				} */
+	        	
 	        	 var ajax=new XMLHttpRequest();	   
 	  		   		ajax.onreadystatechange=function(){		      
 	  			       if(ajax.readyState==4){		    	  
-	  			    	   document.getElementById("message").innerHTML=ajax.responseText;
+	  			    	   document.getElementById("msg1").innerHTML=ajax.responseText;
 	  			       }		   
 	  		   }; 
 	  		   
-	  		 	//var url ="CheckDuplicateEmail?email="+email;//server side servlet
+	  		 	var url ="CheckDuplicateEmail?email="+email;//server side servlet
+	  		   	ajax.open("GET",url,true);//initializes request
+	  		   	ajax.send(null);//sends request for processing	
+	         }
+	     });
+	    
+	    $("#contact").blur(function(event){
+	        var  mob=$(this).val();
+	        //alert (email);
+	        if(mob){
+	        	
+	        	 var ajax=new XMLHttpRequest();	   
+	  		   		ajax.onreadystatechange=function(){		      
+	  			       if(ajax.readyState==4){		    	  
+	  			    	   document.getElementById("msg2").innerHTML=ajax.responseText;
+	  			       }		   
+	  		   }; 
+	  		   
+	  		 	var url ="CheckMobile?mob="+mob;//server side servlet
 	  		   	ajax.open("GET",url,true);//initializes request
 	  		   	ajax.send(null);//sends request for processing	
 	         }
@@ -267,13 +242,14 @@
 							aria-describedby="emailHelp" name="email"
 							placeholder="Enter Email">
 							<span id="erremail" class="alert alert-danger col-lg-8 col-md-8 col-sm-8 col-xs-12">Invalid Email Address</span>
-							<span id="message"></span>
+							<span id="msg1"></span>
 					</div>
 
 					<div class="form-group col-md-6">
 						<label for="exampleInputPassword1">Contact</label> <input
 							type="text" class="form-control" id="contact"
 							placeholder="Enter Contact Detail" name="contact">
+							<span id="msg2"></span>
 					</div>
 				</div>
 				<div class="form-row">

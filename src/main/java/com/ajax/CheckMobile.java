@@ -12,19 +12,20 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import com.book.dao.DbConnect;
 
 /**
- * Servlet implementation class CheckDuplicateEmail
+ * Servlet implementation class CheckMobile
  */
-@WebServlet("/CheckDuplicateEmail")
-public class CheckDuplicateEmail extends HttpServlet {
+
+public class CheckMobile extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public CheckDuplicateEmail() {
+    public CheckMobile() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -34,23 +35,14 @@ public class CheckDuplicateEmail extends HttpServlet {
 	 */
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-			super.service(req, resp);
-			
-	}
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		resp.setContentType("text/html");
+		super.service(req, resp);
 		PrintWriter out=resp.getWriter();
-		String email=req.getParameter("email");
-		if(email!=null) {
+		String mob=req.getParameter("mob");
+		if(mob!=null) {
 		
 		Connection con=DbConnect.Connect();;
 		
-		String qry="select email from users where email='"+email+"'";
+		String qry="select email from users where contact ='"+mob+"'";
 		//out.print(qry);
 		try {
 			Statement stmt=con.createStatement();
@@ -58,12 +50,12 @@ public class CheckDuplicateEmail extends HttpServlet {
 //			out.print(rs.next());
 			if(rs.next()) {
 //				out.print("b1");
-				out.println("<b><font color=red>Email already in Use!!!</font></b>");
+				out.println("<b><font color=red>Contact already in Use!!!</font></b>");
 			}
 			else
 			{
 //				out.print("a");
-				out.println("<b><font color=green>Email Available!!!</font></b>");
+				out.println("<b><font color=green>Contact Available!!!</font></b>");
 			}	
 //			out.print("a1");
 		} 
@@ -75,6 +67,14 @@ public class CheckDuplicateEmail extends HttpServlet {
 		}
 
 	}
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+//		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
