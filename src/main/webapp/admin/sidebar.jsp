@@ -62,22 +62,9 @@
 				</div>
 			</li>
 			
-			<li class="nav-item dropdown"><a href=""
-				class="nav-link dropdown-toggle text-dark bg-light" id="navbardrop"
-				data-toggle="dropdown"> 
-				<i class="fas fa-file-contract fa-fw mr-3 text-primary"></i> Contact Us Queries</a>
-
-				<div class="dropdown-menu">
-					<a href="unreadQueries.jsp" class="dropdown-item">Unread Queries</a> 
-					<a href="readQueries.jsp" class="dropdown-item">Read Queries</a>
-				</div>
-			</li>
 			
-			<li class="nav-item"><a href="search.jsp"
-				  class="nav-link text-dark bg-light"> <i
-					class="fas fa-tachometer-alt fa-fw mr-3 text-primary"></i>
-					Search
-			   </a></li>
+			
+			
 			   				
 				<li class="nav-item dropdown"><a href=""
 				class="nav-link dropdown-toggle text-dark bg-light" id="navbardrop"
