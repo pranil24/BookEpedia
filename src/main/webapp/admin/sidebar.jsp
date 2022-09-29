@@ -37,10 +37,10 @@
 					View Booking
 			</a></li>
 			
-			<li class="nav-item"><a href="view_Feedback.jsp"
+			<!-- <li class="nav-item"><a href="view_Feedback.jsp"
 				class="nav-link text-dark bg-light"> <i class="fas fa-comment-dots fa-fw mr-3 text-primary"></i>
 					View FeedBack
-			</a></li>
+			</a></li> -->
 
 			<li class="nav-item dropdown"><a href=""
 				class="nav-link dropdown-toggle text-dark bg-light" id="navbardrop"
@@ -52,7 +52,7 @@
 				</div>
 			</li>
 			
-			<li class="nav-item dropdown"><a href=""
+			<!-- <li class="nav-item dropdown"><a href=""
 				class="nav-link dropdown-toggle text-dark bg-light" id="navbardrop"
 				data-toggle="dropdown"> <i class="fab fa-codepen fa-fw mr-3 text-primary"></i> Category</a>
 
@@ -60,20 +60,20 @@
 					<a href="addCategory.jsp" class="dropdown-item">Add Category</a> 
 					<a href="viewCategory.jsp" class="dropdown-item">View Category</a>
 				</div>
-			</li>
+			</li> -->
 			
 			
 			
 			
 			   				
-				<li class="nav-item dropdown"><a href=""
+				<!-- <li class="nav-item dropdown"><a href=""
 				class="nav-link dropdown-toggle text-dark bg-light" id="navbardrop"
 				data-toggle="dropdown"> <i
 					class="fas fa-cloud-moon-rain fa-fw mr-3 text-primary"></i> Report</a>
 
 				<div class="dropdown-menu">
 					<a href="betweenBookingQueries.jsp" class="dropdown-item">Booking B/W Dates</a>
-				</div></li>
+				</div></li> -->
 			
 			<li class="nav-item"><a href="changePassword.jsp"
 				class="nav-link text-dark bg-light"> <i class="fas fa-cog fa-fw mr-3 text-primary"></i> 
